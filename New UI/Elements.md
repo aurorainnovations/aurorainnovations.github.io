@@ -1,16 +1,13 @@
 ---
-label: "elements"
+label: "Elements"
 icon: apps
 ---
 
-# elements
----
-
-# library elements
+# Library Elements
 
 ## `library.notify()`
 
-### usage
+### Usage
 
 ```lua
 library.notify(<string> message, <int> time, <Color3> color)
@@ -21,7 +18,7 @@ library.notify(<string> message, <int> time, <Color3> color)
 
 ## `library.createcolorpicker()`
 
-### usage
+### Usage
 
 ```lua
 library.createcolorpicker(<String> name, <String> flag, <Color3> color, <function> callback)
@@ -31,7 +28,9 @@ library.createcolorpicker(<String> name, <String> flag, <Color3> color, <functio
 
 ## `library.createdropdown()`
 
-### deprecated
+!!!warning Warning
+This function is deprecated and will not have any documentation from now on!
+!!!
 
 ---
 

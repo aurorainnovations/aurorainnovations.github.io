@@ -1,10 +1,10 @@
 ---
-label: "home"
+label: "Home"
 icon: home
 ---
 
 ---
 
-## welcome to the cathaxx docs!
+## Welcome to the cathaxx docs!
 
-see the sidebar to navigate
+See the sidebar to navigate.
