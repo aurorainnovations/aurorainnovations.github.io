@@ -1,0 +1,137 @@
+# input: .
+# output: .retype
+# url: cathaxx.netlify.app
+# branding:
+#   title: cathaxx
+#   label: v0.01b
+# branding:
+#   logo: ./catware.png
+# footer:
+#   copyright: "&copy; Copyright Penis Boy Innovation LLC {{ year }}. All rights reserved."
+
+input: ./ # The local path from this retype.yml file to your content files.
+          # See also: output
+
+# -----------------------------------------------------------------------------
+
+output: .docs # Custom path to the output directory.
+                # See also: input
+
+# -----------------------------------------------------------------------------
+
+url: example.com               # The base URL of your website.
+url: docs.example.com          # Can also be a sub-domain.
+url: example.com/docs          # Can also include a sub-folder path.
+url: https://example.com/docs/ # Can also include a protocol.
+
+# -----------------------------------------------------------------------------
+
+poweredByRetype: true # Set to false to remove the Powered by Retype branding.
+                      # A Retype Pro license is required.
+                      # See: https://retype.com/pro
+
+# -----------------------------------------------------------------------------
+
+branding:
+  title: cathaxx                 # Your custom website title; keep it short.
+  logo: ./catware.png         # Path to a logo file.
+  logoDark: ./catware.png # Path to a logo file to use in dark mode.
+  logoAlign: left               # Align the logo to the right or the left.
+  label: docs
+
+# -----------------------------------------------------------------------------
+
+links: # A list of custom links to add to the top bar of the generated website.
+       # See also: footer.links
+  - text: Home      # The text to use for the link
+    link: https://cathaxx.netlify.app # Link to an internal file or external URL.
+  - text: API
+    link: /api.md   # Link to an internal file or external URL.
+    icon: gear      # A custom icon name, :emoji:, <svg>, or path to a file.
+    iconAlign: left # Icon alignment, to the left or right. Default is left.
+    target: blank   # Custom target. Use blank to open link in a new window.
+
+# -----------------------------------------------------------------------------
+
+footer:
+  copyright: "made by keygen#0001" # A custom copyright statement.
+
+# -----------------------------------------------------------------------------
+
+cache:
+  busting: query # Cache busting strategy.
+                 # Options include: none | path | query (default)
+
+# -----------------------------------------------------------------------------
+
+cname: cathaxx.netlify.app # The CNAME file value, or false to not create a CNAME file.
+
+# -----------------------------------------------------------------------------
+
+editor:         # Configure the page live editor functionality that is only
+                # available when `retype watch` is running.
+  enabled: false # Set to false to disable and hide the live editor.
+
+# -----------------------------------------------------------------------------
+
+favicon: ./catware.png # Path to a custom favicon, or.
+                            # just put a favicon.ico in your project root.
+
+# -----------------------------------------------------------------------------
+
+integrations:
+  gravatar:
+    default: mp
+    enabled: true # Whether Retype should use Gravatar to pull profile images.
+
+# -----------------------------------------------------------------------------
+
+markdown:          # Markdown configuration options.
+  lineBreaks: soft # Switches between `soft` and `hard` line break modes.
+
+# -----------------------------------------------------------------------------
+
+meta:
+  title: " | cathaxx docs" # Appended to the <title> element on all pages.
+
+# -----------------------------------------------------------------------------
+
+search:          # Custom configuration of the website search component.
+  hotkeys:
+    - "/"        # Keyboard key to set the cursor focus into the search field.
+  maxResults: 20 # Max number of search results to render.
+  minChars: 2    # Min number of characters required to trigger a sear.ch
+  mode: full     # The search index creation mode.
+                 # Options include: full | partial | basic
+  noResultsFoundMsg: "No results" # Message when no results are found.
+  placeholder: Search # Placeholder text used in the search input field.
+
+# -----------------------------------------------------------------------------
+
+server:
+  host: 127.0.0.1       # Serve the website from this host location.
+  host: 127.0.0.1:5005  # Custom port also supported.
+  port: 5005            # A custom port configurated separately from host.
+  watch:
+    mode: memory        # Where to host files from during retype watch.
+                        # Options include: memory (default) | disk
+    polling: true       # How Retype will listen for file changes.
+                        # Options include: false (default) | true | number
+    validation: optimal # How thorough Retype is looking for changed files.
+                        # Options include: fast | full | optimal (default)
+
+# -----------------------------------------------------------------------------
+
+snippets:      # Custom code snippets configuration.
+               # See: https://retype.com/components/code-snippet
+  lineNumbers: # A list of language strings to enable line numbering on.
+    - js
+    - none     # Use `none` to disable line-numbering on snippets.
+
+# -----------------------------------------------------------------------------
+
+templating:
+  enabled: true # Enable or disable the Retype content templating engine.
+  liquid: false # Is Liquid syntax {% ... %} enabled?
+                # If true, Retype is incompatible with
+                # GitBook style of component configuration.
