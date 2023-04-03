@@ -1,6 +1,6 @@
 ---
 label: "elements"
-icon: home
+icon: apps
 ---
 
 # elements
