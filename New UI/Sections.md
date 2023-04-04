@@ -57,3 +57,29 @@ section_tbl:new_button({
 ```
 
 ---
+
+## `section_tbl:new_seperator()`
+
+### Usage
+
+```lua
+section_tbl:new_seperator({name = "name"})
+```
+
+---
+
+## `section_tbl:new_keybind()`
+
+### Usage
+
+```lua
+section_tbl:new_keybind({
+	name = "keybind",
+	flag = "flag",
+	default = Enum.KeyCode.End,
+	(optional) mode = "Toggle",
+    (optional) ignore = true,
+	callback = function()
+		library:Close()
+	end,
+})
