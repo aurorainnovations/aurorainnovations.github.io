@@ -1,6 +1,6 @@
 # input: .
 # output: .retype
-# url: cathaxx.netlify.app
+# url: cathaxx.github.io
 # branding:
 #   title: cathaxx
 #   label: v0.01b
@@ -44,7 +44,7 @@ branding:
 links: # A list of custom links to add to the top bar of the generated website.
        # See also: footer.links
   - text: Home      # The text to use for the link
-    link: https://cathaxx.netlify.app # Link to an internal file or external URL.
+    link: https://cathaxx.github.io # Link to an internal file or external URL.
   - text: API
     link: /api.md   # Link to an internal file or external URL.
     icon: gear      # A custom icon name, :emoji:, <svg>, or path to a file.
@@ -64,7 +64,7 @@ cache:
 
 # -----------------------------------------------------------------------------
 
-cname: cathaxx.netlify.app # The CNAME file value, or false to not create a CNAME file.
+cname: cathaxx.github.io # The CNAME file value, or false to not create a CNAME file.
 
 # -----------------------------------------------------------------------------
 
