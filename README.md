@@ -5,7 +5,7 @@ icon: home
 
 ---
 
-## Welcome to the cathaxx docs!
+## Welcome to the Aurora docs!
 
 See the sidebar to navigate.
 
